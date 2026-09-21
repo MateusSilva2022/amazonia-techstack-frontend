@@ -256,18 +256,147 @@ body {
   margin-bottom: 8px;
 }
 
-.cartao-produto h3 {
-  font-size: 15px;
-  font-weight: 700;
+.link-produto {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
 .fazenda-origem {
   font-size: 12px;
   color: #6b6660;
+  text-decoration: none;
+}
+
+.fazenda-origem:hover {
+  text-decoration: underline;
+}
+
+.link-assistente {
+  font-size: 13px;
+  font-weight: 600;
+  color: #b5542a;
+  text-decoration: none;
+}
+
+.link-assistente:hover {
+  text-decoration: underline;
+}
+
+.cartao-produto h3 {
+  font-size: 15px;
+  font-weight: 700;
 }
 
 .preco {
   font-size: 14px;
   font-weight: 700;
   color: #1f4b3f;
+}
+
+.topo-vitrine {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #edebe5;
+}
+
+.logo-vitrine {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f4b3f;
+}
+
+.capa-fazenda {
+    background-image: linear-gradient(rgba(31, 75, 63, 0.78), rgba(31, 75, 63, 0.88)), url('imagens/fazenda-fundo.avif.avif');
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 64px 40px;
+}
+
+.capa-fazenda h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.capa-fazenda p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.75);
+}
+
+.secao-produtos-vitrine {
+  padding: 40px;
+}
+
+.secao-produtos-vitrine h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 24px;
+  color: #1f4b3f;
+  margin-bottom: 20px;
+}
+
+.pagina-assistente {
+  display: flex;
+  gap: 24px;
+  padding: 40px;
+  align-items: flex-start;
+}
+
+.painel-assistente {
+  flex: 1;
+  max-width: 560px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.painel-assistente h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 24px;
+  color: #1f4b3f;
+}
+
+.painel-assistente label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6660;
+}
+
+.painel-assistente textarea {
+  height: 100px;
+  border: 1px solid #dedcd5;
+  border-radius: 6px;
+  padding: 12px 14px;
+  font-size: 14px;
+  font-family: inherit;
+  resize: vertical;
+}
+
+.botao-pequeno {
+  align-self: flex-start;
+  height: 40px;
+  padding: 0 20px;
+}
+
+.caixa-resultado {
+  border: 1px solid #dedcd5;
+  border-radius: 6px;
+  padding: 14px;
+  font-size: 14px;
+  color: #1b1b18;
+  background-color: #f5f3ee;
+  line-height: 1.6;
+}
+
+.painel-imagem {
+  width: 240px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
 }
