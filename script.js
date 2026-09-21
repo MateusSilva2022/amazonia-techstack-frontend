@@ -58,7 +58,7 @@ if (inputBusca) {
       if (secaoRanking) secaoRanking.classList.remove('oculto');
       if (feedbackIa) {
         feedbackIa.classList.remove('oculto');
-        feedbackIa.innerHTML = ` <strong>IA Insights:</strong> Exibindo o ranqueamento inteligente de fazendas baseado em avaliações e qualidade de cultivo.`;
+        //feedbackIa.innerHTML = ` <strong>IA Insights:</strong> Exibindo o ranqueamento inteligente de fazendas baseado em avaliações e qualidade de cultivo.`;
       }
 
       produtos.forEach(prod => prod.style.display = "flex");
@@ -81,7 +81,7 @@ if (inputBusca) {
     if (feedbackIa) {
       if (termo.length > 2) {
         feedbackIa.classList.remove('oculto');
-        feedbackIa.innerHTML = ` <strong>IA Insights:</strong> Encontrados ${encontrados} itens baseados na sua intenção de busca ("${termo}").`;
+        //feedbackIa.innerHTML = ` <strong>IA Insights:</strong> Encontrados ${encontrados} itens baseados na sua intenção de busca ("${termo}").`;
       } else {
         feedbackIa.classList.add('oculto');
       }
