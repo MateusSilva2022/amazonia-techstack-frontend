@@ -1,0 +1,271 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'IBM Plex Sans', Arial, sans-serif;
+  color: #1b1b18;
+}
+
+.tela-login {
+  display: flex;
+  min-height: 100vh;
+}
+
+.painel-marca {
+  background-color: #1f4b3f;
+  color: #ffffff;
+  width: 55%;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.logo {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.chamada {
+  max-width: 480px;
+  margin: auto 0;
+}
+
+.chamada h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 40px;
+  line-height: 1.15;
+  margin-bottom: 20px;
+}
+
+.chamada p {
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.7);
+  line-height: 1.6;
+}
+
+.painel-form {
+  width: 45%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+}
+
+.form-login {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.form-login h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 26px;
+  color: #1f4b3f;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 12px;
+  font-weight: 600;
+  color: #6b6660;
+}
+
+.campo input {
+  height: 48px;
+  border: 1px solid #dedcd5;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+  width: 100%;
+}
+
+.esqueci {
+  align-self: flex-end;
+  font-size: 13px;
+  color: #6b6660;
+  text-decoration: none;
+}
+
+.botao-primario {
+  height: 50px;
+  background-color: #1f4b3f;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.rodape-form {
+  text-align: center;
+  font-size: 13px;
+  color: #6b6660;
+  border-top: 1px solid #edebe5;
+  padding-top: 16px;
+  margin-top: 8px;
+}
+
+.rodape-form a {
+  font-weight: 700;
+  color: #b5542a;
+  text-decoration: none;
+}
+
+.barra-topo {
+  height: 6px;
+  background-color: #1f4b3f;
+}
+
+.pagina-cadastro {
+  min-height: 100vh;
+  background-color: #f5f3ee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.cartao-cadastro {
+  background-color: #ffffff;
+  width: 100%;
+  max-width: 440px;
+  padding: 40px;
+  border-radius: 10px;
+  border: 1px solid #e4dfd6;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.cartao-cadastro h2 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 24px;
+  color: #1f4b3f;
+}
+
+.subtitulo {
+  font-size: 13px;
+  color: #6b6660;
+  margin-top: -8px;
+}
+
+.grupo-radio {
+  display: flex;
+  gap: 24px;
+  border: 1px solid #dedcd5;
+  border-radius: 6px;
+  padding: 12px 14px;
+}
+
+.opcao-radio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.oculto {
+  display: none;
+}
+
+.topo-app {
+  height: 72px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 0 40px;
+  border-bottom: 1px solid #edebe5;
+}
+
+.topo-app .logo {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f4b3f;
+}
+
+.busca {
+  flex: 1;
+  max-width: 480px;
+  height: 42px;
+  border: 1px solid #dedcd5;
+  border-radius: 6px;
+  padding: 0 14px;
+  font-size: 14px;
+}
+
+.link-sair {
+  margin-left: auto;
+  font-size: 13px;
+  color: #6b6660;
+  text-decoration: none;
+}
+
+.pagina-catalogo {
+  padding: 40px;
+}
+
+.pagina-catalogo h1 {
+  font-family: 'Fraunces', Georgia, serif;
+  font-size: 28px;
+  color: #1f4b3f;
+  margin-bottom: 24px;
+}
+
+.grade-produtos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+  gap: 20px;
+}
+
+.cartao-produto {
+  border: 1px solid #dedcd5;
+  border-radius: 10px;
+  padding: 16px;
+  text-decoration: none;
+  color: #1b1b18;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.foto-produto {
+  height: 140px;
+  background-color: #e6ede9;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.cartao-produto h3 {
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.fazenda-origem {
+  font-size: 12px;
+  color: #6b6660;
+}
+
+.preco {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f4b3f;
+}

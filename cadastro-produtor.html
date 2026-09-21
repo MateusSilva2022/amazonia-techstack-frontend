@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Amazônia TechStack - Criar conta</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="barra-topo"></div>
+<div class="pagina-cadastro">
+  <div class="cartao-cadastro" id="form-cadastro">
+    <h2>Criar conta</h2>
+    <p class="subtitulo">Escolha seu perfil e preencha os dados abaixo</p>
+
+    <div class="grupo-radio">
+      <label class="opcao-radio">
+        <input type="radio" name="perfil" value="produtor" checked>
+        Produtor
+      </label>
+      <label class="opcao-radio">
+        <input type="radio" name="perfil" value="comprador">
+        Comprador
+      </label>
+    </div>
+
+    <div class="campo">
+      <label for="nome">Nome completo</label>
+      <input type="text" id="nome" name="nome" placeholder="Seu nome">
+    </div>
+
+    <div class="campo campo-produtor">
+      <label for="fazenda">Nome da fazenda</label>
+      <input type="text" id="fazenda" name="fazenda" placeholder="Ex: Fazenda Boa Esperança">
+    </div>
+
+    <div class="campo campo-comprador oculto">
+      <label for="documento">CPF ou CNPJ</label>
+      <input type="text" id="documento" name="documento" placeholder="000.000.000-00">
+    </div>
+
+    <div class="campo">
+      <label for="email">E-mail</label>
+      <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com">
+    </div>
+
+    <div class="campo">
+      <label for="contato">Telefone / WhatsApp</label>
+      <input type="text" id="contato" name="contato" placeholder="(92) 9____-____">
+    </div>
+
+    <div class="campo">
+      <label for="senha">Senha</label>
+      <input type="password" id="senha" name="senha" placeholder="********">
+    </div>
+
+    <div class="campo">
+      <label for="repetir-senha">Repetir senha</label>
+      <input type="password" id="repetir-senha" name="repetir-senha" placeholder="********">
+    </div>
+
+    <a href="index.html" class="botao-primario">Salvar</a>
+
+    <p class="rodape-form">Já tem conta? <a href="index.html">Entrar</a></p>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
