@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Amazônia TechStack - Cadastrar fazenda</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="barra-topo"></div>
+        <div class="pagina-cadastro">
+            <div class="cartao-cadastro">
+                <h2>Cadastrar fazenda</h2>
+                <p class="subtitulo">Insira as informações da nova propriedade</p>
+
+                <div class="campo">
+                    <label for="nome-fazenda">Nome da fazenda</label>
+                    <input type="text" id="nome-fazenda" placeholder="Ex: Fazenda Boa Esperança">
+                </div>
+
+                <div class="campo">
+                    <label for="endereco">Endereço</label>
+                    <input type="text" id="endereco" placeholder="Ex: Rodovia AM-010, km 28">
+                </div>
+
+                <div class="campo">
+                    <label for="municipio">Município</label>
+                    <input type="text" id="municipio" placeholder="Ex: Manaus">
+                </div>
+
+                <div class="campo">
+                    <label for="produtor">Produtor</label>
+                    <select id="produtor" class="campo input" >
+                        <option value="" disabled selected>Selecione o produtor</option>
+                        <option value="Alessandro Oliveira">Alessandro Oliveira</option>
+                        <option value="Roger Matheus">Roger Matheus</option>
+                        <option value="Fernando">Fernando</option>
+                    </select>
+                </div>
+
+                <div class="campo">
+                    <label for="foto-fazenda">Foto da fazenda</label>
+                    <input type="file" id="foto-fazenda" accept="image/*" style="padding-top: 10px;">
+                </div>
+
+                <a href="assistente-escrita.html" class="link-assistente">✎ Escrever descrição com assistente de IA</a>
+
+                <a href="catalogo.html" class="botao-primario">Salvar fazenda</a>
+
+                <p class="rodape-form">Voltar pro <a href="catalogo.html">catálogo</a></p>
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,41 +1,51 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Amazônia TechStack - Cadastrar produto</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="barra-topo"></div>
-<div class="pagina-cadastro">
-  <div class="cartao-cadastro">
-    <h2>Cadastrar produto</h2>
-    <p class="subtitulo">Vinculado à Fazenda Boa Esperança</p>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amazônia TechStack - Cadastrar produto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    </head>
+  <body>
+    <div class="barra-topo"></div>
+    <div class="pagina-cadastro">
+      <div class="cartao-cadastro">
+        <h2>Cadastrar produto</h2>
+        <p class="subtitulo">Vinculado à Fazenda Boa Esperança</p>
 
-    <div class="campo">
-      <label for="nome-produto">Nome do produto</label>
-      <input type="text" id="nome-produto" placeholder="Ex: Pimenta cheirosa">
+        <div class="campo">
+          <label for="nome-produto">Nome do produto</label>
+          <input type="text" id="nome-produto" placeholder="Ex: Pimenta cheirosa">
+        </div>
+
+        <div class="campo">
+          <label for="categoria">Categoria</label>
+          <input type="text" id="categoria" placeholder="Ex: Temperos e ervas">
+        </div>
+
+        <div class="campo">
+          <label for="preco">Preço por kg</label>
+          <input type="text" id="preco" placeholder="R$ 0,00">
+        </div>
+
+        <div class="campo">
+          <label for="fazenda-origem">Fazenda de origem</label>
+          <select id="fazenda-origem" class="campo input" >
+            <option value="" disabled selected>Selecione a fazenda</option>
+            <option value="Fazenda Boa Esperança">Fazenda Boa Esperança</option>
+            <option value="Fazenda Serra do Sol">Fazenda Serra do Sol</option>
+            <option value="Fazenda Rio Negro">Fazenda Rio Negro</option>
+          </select>
+        </div>
+  
+        <a href="assistente-escrita.html" class="link-assistente">✎ Escrever descrição com assistente de IA</a>
+
+        <a href="catalogo.html" class="botao-primario">Salvar produto</a>
+
+        <p class="rodape-form">Voltar pro <a href="catalogo.html">catálogo</a></p>
+      </div>
     </div>
-
-    <div class="campo">
-      <label for="categoria">Categoria</label>
-      <input type="text" id="categoria" placeholder="Ex: Temperos e ervas">
-    </div>
-
-    <div class="campo">
-      <label for="preco">Preço por kg</label>
-      <input type="text" id="preco" placeholder="R$ 0,00">
-    </div>
-
-    <a href="assistente-escrita.html" class="link-assistente">✎ Escrever descrição com assistente de IA</a>
-
-    <a href="catalogo.html" class="botao-primario">Salvar produto</a>
-
-    <p class="rodape-form">Voltar pro <a href="catalogo.html">catálogo</a></p>
-  </div>
-</div>
-</body>
+  </body>
 </html>
